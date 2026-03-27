@@ -21,6 +21,17 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- system clipboard stuff
+vim.opt.clipboard:append("unnamedplus")
+
+-- set tab stuff
+-- number of spaces a tab counts for
+vim.opt.tabstop = 4
+-- number of spaces a tab counts for while editing
+vim.opt.softtabstop = 4
+-- number of spaces used for each step of auto indent
+vim.opt.shiftwidth = 4
+
 -- skips lazyvim plugin order check
 vim.g.lazyvim_check_order = false
 
